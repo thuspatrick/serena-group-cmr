@@ -5,9 +5,10 @@
 :root{
     --header-height: 3rem;
 
-    --color-primary: yellow;
-    --color-secondary: black;
-    --color-alt: ;
+    --color-primary: #FFD033;
+    --color-secondary: #201F21;
+    --alt-color-primary: #1098F7;
+    --alt-color-secondary: #3A7CA5;
 
     --body-font: 'Poppins', sans-serif;
     --font-medium: 500;
@@ -31,15 +32,23 @@ body{
     background-color: white;
     color: var(--color-secondary);
 }
-
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 ul{
     list-style: none;
 }
 
-a, .nav-logo{
+a{
     text-decoration: none;
     text-transform: uppercase;
     color: black;
+}
+.nav-logo{
+    width: 100px;
+    height: auto;
 }
 
 img{
@@ -120,3 +129,4 @@ button{
 #contact h3{
     padding-bottom: 2rem;
 }
+/* --------------- Whatapp ------------- */
