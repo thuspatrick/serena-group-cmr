@@ -29,7 +29,6 @@ html{
 body{
     font-family: var(--body-font);
     font-size: 400;
-    background-color: white;
     color: var(--color-secondary);
 }
 header{
@@ -39,6 +38,7 @@ header{
 }
 main{
     padding: 0 1rem;
+    /* background-color: var(--color-primary); */
 }
 ul{
     list-style: none;
@@ -100,7 +100,7 @@ form label{
     display: block;
 }
 .adress-data{
-    background-color: rgb(198, 245, 179);
+    /* background-color: rgb(198, 245, 179); */
     padding: 2rem 0;
     display: grid;
     /* width: 100vw; */
@@ -176,7 +176,10 @@ button{
 }
 
 footer{
+    border-top: 3px solid var(--color-secondary);
     width: 100%;
+    margin: auto;
+    background-color: var(--color-primary);
 }
 .swiper-container {
     width: 100%;
@@ -203,7 +206,7 @@ footer{
 
 @media screen and (min-width: 560px) {
     body{
-        background-color: yellowgreen;
+        /* background-color: yellowgreen; */
     }
     .nav-menu{
         display: none;
@@ -231,7 +234,7 @@ footer{
 
 @media screen and (min-width: 800px) {
     body{
-        background-color: tomato;
+        /* background-color: tomato; */
     }
     .nav-menu{
         display: flex;
@@ -242,7 +245,7 @@ footer{
     main{
         width: 90vw;
         max-width: 1200px;
-        background-color: violet;
+        /* background-color: violet; */
         margin: auto;
     }
     .adress-data{
@@ -255,7 +258,7 @@ footer{
 
 @media screen and (min-width: 1200px) {
     body{
-        background-color: blue;
+        /* background-color: blue; */
     }
     .nav-icons{
         display: none;
@@ -265,7 +268,7 @@ footer{
 
 @media screen and (max-width: 560px) {
     body{
-        background-color: red;
+        /* background-color: red; */
     }
     .nav-menu{
         display: none;
