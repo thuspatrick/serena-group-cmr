@@ -72,11 +72,14 @@ img{
 .hero-image{
     width: 100%;
     height: auto;
+    display: grid;
+    place-items: center;
 }
 .hero-image img{
     border-radius: 3rem;
     box-shadow: 5px 10px 5px grey;
     margin-bottom: 2rem;
+    max-width: 400px;
 }
 .section h1{
     margin-bottom: 1.5rem;
@@ -100,6 +103,7 @@ img{
 #contact{
     background-color: var(--color-primary);
     width: 100%;
+    max-width: 800px;    
     margin: 0 auto;
     padding: 2rem 1rem;
     border-radius: .5rem;
@@ -110,7 +114,6 @@ img{
 }
 form{
     width: 100%;
-    max-width: 800px;
     margin: auto;
     margin-top: 1rem;
 }
@@ -190,7 +193,7 @@ footer{
 }
 .swiper-container {
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
 }
 .swiper-slide{
     display: flex;
@@ -238,6 +241,10 @@ footer{
         max-width: 1200px;
         margin: auto;
     }
+    .hero-image{
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    } 
     .adress-data{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -252,8 +259,8 @@ footer{
         padding-right: 2rem;
     }
 }
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
     .nav-icons{
         display: none;
     }
-}
+} */
