@@ -15,35 +15,33 @@
     --font-semi-bold: 600;
     
 }
-
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
 html{
     scroll-behavior: smooth;
 }
-
 body{
     font-family: var(--body-font);
-    font-size: 400;
+    font-weight: 400;
     color: var(--color-secondary);
 }
 header{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
+.nav-menu{
+    display: none;
+}  
 main{
     padding: 0 1rem;
-    /* background-color: var(--color-primary); */
 }
 ul{
     list-style: none;
 }
-
 a{
     text-decoration: none;
     text-transform: uppercase;
@@ -53,17 +51,14 @@ a{
     width: 100px;
     height: auto;
 }
-
 img{
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
-
 .nav-link{
     font-weight: var(--font-semi-bold);
     margin: .25rem 1.5rem;
 }
-
 .nav-link:hover{
     border-bottom: 3px solid var(--color-primary);
 }
@@ -71,45 +66,81 @@ img{
     min-height: 84vh;
     display: grid;
     place-items: center;
+    max-width: 1100px;
+    margin: auto;
 }
 .hero-image{
     width: 100%;
     height: auto;
-    max-width: 1100px;
-    margin: auto;
 }
 .hero-image img{
     border-radius: 3rem;
+    box-shadow: 5px 10px 5px grey;
+    margin-bottom: 2rem;
 }
-
+.section h1{
+    margin-bottom: 1.5rem;
+}
+.section h2{
+    margin-bottom: .5rem;
+}
 #apropos{
     min-height: 100vh;
 }
+#apropos p{
+    margin-bottom: 1.5rem;
+}
 #produits{
-    min-height: 100vh;
+    min-height: 50vh;
 }
-
-
-form{
-    width: 100%;
-    max-width: 800px;
-    margin: auto;
-}
-
-form label{
-    display: block;
-}
-.adress-data{
-    /* background-color: rgb(198, 245, 179); */
-    padding: 2rem 0;
-    display: grid;
-    /* width: 100vw; */
+#galerie{
+    border: 3px solid var(--color-primary);
+    border-radius: .5rem;
 }
 #contact{
     background-color: var(--color-primary);
     width: 100%;
     margin: 0 auto;
     padding: 2rem 1rem;
+    border-radius: .5rem;
+    margin-top: 2rem;
+}
+#contact h3{
+    padding-bottom: 2rem;
+}
+form{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 1rem;
+}
+.form-title{
+    text-transform: uppercase;
+}
+form label{
+    display: block;
+}
+input, textarea{
+    width: 100%;
+    font-size: 18px;
+    padding-top: .5rem;
+}
+label{
+    padding-bottom: 1rem;
+}
+button{
+    padding: .5rem;
+    font-size: 16px;
+}
+footer{
+    border-top: 3px solid var(--color-secondary);
+    width: 100%;
+    margin: auto;
+    margin-top: 1rem;
+}
+.adress-data{
+    padding: 2rem 0;
+    display: grid;
 }
 .contact{
     margin: 0 auto;
@@ -125,23 +156,24 @@ form label{
     font-size: 40px;
     text-align: center;
 }
-.bloc-contact{
+.contact-icons{
+    display: flex;
     width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 1rem;
+    margin: 0 auto;
 }
-
 .contact-icons i:hover{
     color: var(--color-primary);
 }
-
 .icons i{
     padding: .25rem 1rem;
-    color: white;
+    color: var(--color-primary);
 }
-
 .icons i:hover{
     font-size: 2rem;
 }
-
 #whatsapp i:hover{
     color: green;
     font-size: 3rem;
@@ -150,36 +182,11 @@ form label{
     color: blue;
     font-size: 3rem;
 }
-
-input, textarea{
-    width: 100%;
-    font-size: 18px;
-    padding-top: .5rem;
-}
-label{
-    padding-bottom: 1rem;
-}
-
 .copyright{
     background-color: black;
     color: white;
     text-align: center;
     padding: .75rem;
-}
-
-button{
-    padding: .5rem;
-    font-size: 16px;
-}
-#contact h3{
-    padding-bottom: 2rem;
-}
-
-footer{
-    border-top: 3px solid var(--color-secondary);
-    width: 100%;
-    margin: auto;
-    background-color: var(--color-primary);
 }
 .swiper-container {
     width: 100%;
@@ -187,55 +194,39 @@ footer{
 }
 .swiper-slide{
     display: flex;
-    flex-direction: column;
-    /* align-items: center; */
+    justify-content: center;
+    align-items: center;
     position: relative;
 }
 .swiper-slide img{
     width: 100%;
 }
 .swiper-slide div{
-    color: var(--alt-color-primary);
+    color: var(--color-primary);
+    font-weight: 600;
     position: absolute;
     bottom: 50%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
+    background-color: rgba(128, 128, 128, 0.425);
 }
+.swiper-button-next, .swiper-button-prev, .swiper-pagination, .swiper-scrollbar{
+    color: var(--color-primary);
+}
+.img-description{
+    width: 80%;
+}
+
 /* --------------- Whatapp ------------- */
-
-
-@media screen and (min-width: 560px) {
-    body{
-        /* background-color: yellowgreen; */
-    }
-    .nav-menu{
-        display: none;
-    }
-    
-    header{
-        justify-content: space-between;
-    }
-    .contact-icons{
-        margin-left: .5rem;
-        display: grid;
-        place-items: center;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+@media screen and (min-width: 550px) {
     .icons{
-        /* font-size: 40px; */
         text-align: left;
     }
     .icons i{
         padding: .25rem 1rem;
-        /* color: white; */
     }
 }
-
-
 @media screen and (min-width: 800px) {
-    body{
-        /* background-color: tomato; */
-    }
     .nav-menu{
         display: flex;
     }
@@ -245,35 +236,24 @@ footer{
     main{
         width: 90vw;
         max-width: 1200px;
-        /* background-color: violet; */
         margin: auto;
     }
     .adress-data{
-        width: 100%;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        padding: 2rem 2rem;
+    }
+    .contact-icons{
+        width: 85%;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0rem;
+    }
+    .contact-icons i{
+        padding-right: 2rem;
     }
 }
-
 @media screen and (min-width: 1200px) {
-    body{
-        /* background-color: blue; */
-    }
     .nav-icons{
         display: none;
-    }
-}
-
-
-@media screen and (max-width: 560px) {
-    body{
-        /* background-color: red; */
-    }
-    .nav-menu{
-        display: none;
-    }  
-    header{
-        justify-content: space-between;
     }
 }
