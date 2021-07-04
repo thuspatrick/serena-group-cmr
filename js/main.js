@@ -19,3 +19,14 @@ const swiper = new Swiper('.swiper-container', {
       el: '.swiper-scrollbar',
     },
   });
+
+  // Navigation toogle
+
+  const navBtn = document.querySelector('.menu-bar')
+  
+  navBtn.addEventListener('click', (e)=>{
+    e.preventDefault();
+    const navLinks = document.querySelector('.nav-links')
+    console.log("click");
+    navLinks.classList.toggle("hide")
+  })

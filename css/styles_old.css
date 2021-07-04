@@ -1,0 +1,68 @@
+
+
+
+/* --------------- Whatapp ------------- */
+@media screen and (min-width: 680px) {
+    .icons{
+        font-size: 40px;
+        text-align: left;
+    }
+    .icons i{
+        padding: .25rem 1rem;
+    }    
+    .adress-data,#team{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+@media screen and (min-width: 850px) {
+    header{
+        /* width: 95vw; */
+        max-width: 1200px;
+        margin: auto;
+    }
+    .nav-menu{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-links{
+        /* font-size: 2vw; */
+        display: flex;
+        margin-bottom: 20px;
+
+    }
+    .nav-icons{
+        display: none;
+    }
+    main{
+        width: 90vw;
+        max-width: 1200px;
+        margin: auto;
+    }
+    .hero-image{
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    .contact-icons{
+        width: 85%;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0rem;
+    }
+    .contact-icons i{
+        padding-right: 2rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .adress-data{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact-icons{
+        margin-top: 1rem;
+        font-size: 60px;
+    }
+}

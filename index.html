@@ -5,57 +5,155 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serena Group CMR</title>
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
     <!-- =========================  UNICONS  =========================== -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/modal.css">
 </head>
 <body>
     <!-- =========================  Header  =========================== -->
     <header>
-        <div class="nav-logo"><img src="./images/Logo serena alba group cmr sarl -01.jpg" alt=""></div>
         <div class="nav-menu">
-            <!-- <a class="nav-link" href="#home">Home</a> -->
-            <a class="nav-link" href="#apropos">Qui Sommes Nous</a>
-            <a class="nav-link" href="#produits">Nos Produits</a>
-            <a class="nav-link" href="#galerie">Galerie</a>
-            <a class="nav-link" href="#contact">Contact</a>
+            <div class="nav-logo"><img src="./images/Logo serena alba group cmr sarl -01.jpg" alt=""></div>
+            <div class="nav-links">
+                <!-- <a class="nav-link" href="#home">Accueil</a> -->
+                <a class="nav-link" href="#produits">Produits</a>
+                <a class="nav-link" href="#galerie">Galerie</a>
+                <a class="nav-link" href="#team">Notre équipe</a>
+                <a class="nav-link" href="#contact">Contact</a>
+            </div>
         </div>
         <div class="nav-icons">
-            <i class="uil uil-times"></i>
-            <i class="uil uil-bars"></i>
-            <!-- <i class="uil uil-angle-right"></i> -->
-            <!-- <i class="uil uil-angle-left"></i> -->
+            <div class="menu-bar">
+                <a href="">
+                    <i class="uil uil-bars open"></i>
+                </a>
+                <a href="">
+                    Menu
+                </a>
+            </div>
         </div>
     </header>
     <main>
         <div class="section hero" id="home">
             <div class="hero-image">
                 <img src="./images/present_logo.png" alt="">
+                <div class="hero-cta">
+                    <h2>Faites nous confiance <span>pour un mariage reussi</span> </h2>
+                    <button>Obtenez un prix</button>
+                </div>
+            </div>
+            <div class="hero-image">            
                 <img src="./images/present_text.png" alt="">
+                <div class="hero-cta">
+                    <h2>Pour tous types d'évènements <span>Nous avons ce qu'il vous faut</span> </h2>
+                    <button>Consulter le catalogue</button>
+                </div>
             </div>
         </div>
-        <div class="section" id="apropos">
-            <h1>A propos</h1>
-            <p><span class="group">Serena Alba group cmr</span> est une société basée en France et installée depuis peu au Cameroun</p>
-            <h2>Nos activités principales:</h2>
-            <ul>
-                <li>Location / Fabrication de baches</li>
-                <li>Confection de tenues de travail</li>
-                <li>Confection de bracelets en caoutchouc</li>
-            </ul>
+
+        <div class="section" id="galerie">
+            <h2>Nos Produits</h2>
+            <div class="catalogue">
+                <div class="product">
+                 <img src="https://unsplash.it/400?random
+                 " alt="Product Picture">
+                 <h3>Product Title</h3>   
+                </div>
+                <div class="product">
+                 <img src="https://unsplash.it/400?random
+                 " alt="Product Picture">
+                 <h3>Product Title</h3>   
+                </div>
+                <div class="product">
+                 <img src="https://unsplash.it/400?random
+                 " alt="Product Picture">
+                 <h3>Product Title</h3>   
+                </div>
+                <div class="product">
+                 <img src="https://unsplash.it/400?random
+                 " alt="Product Picture">
+                 <h3>Product Title</h3>   
+                </div>
+            </div>                
         </div>
+
         <div class="section" id="produits">
-            <h1>Nos Produits</h1>
-            <h2>De super produits à votre disposition.</h2>
+            <h2>Locations de chapiteaux et d'équipement</h2>
+            <div class="produits-wrapper">
+                <p><span>Serena Group</span> vous offre non seulement un service professionnel mais aussi des équipements de qualité et des prix compétitifs! Pour vos événements, corporatifs, sportifs, culturels et privés nous saurons être à la hauteur de vos attentes en hiver comme en été! Des résultats modernes, un personnel dynamique et professionnel fera de vos événements un succès!</p>
                 <ul>
-                    <li>Chapiteaux 5 x 5m</li>
-                    <li>Chapiteaux 4 x 4m</li>
-                    <li>Chapiteaux 3 x 3m</li>
+                    <li>Chapiteaux de toutes tailles</li>
+                    <li>Structure autoportante</li>
+                    <li>Chaises, Tables et Nappes</li>
+                    <li>Vaisselles et Couverts</li>
+                    <li>Éclairage (lumière DEL, hallogène…)</li>
+                    <li>Végétaux (palmiers, fleures etc…)</li>
+                    <li>Chauffage</li>
                 </ul>
+            </div>            
+            <button>Voir nos produits</button>
+        </div>        
+        <div class="section" id="team">
+            <h2>Notre équipe</h2>
+            <div class="team-container">
+                <div class="member-card">
+                    <div class="title">Francis Boyer</div>
+                    <div class="poste">Président</div>
+                    <div class="contact-me">
+                        <i class="uil uil-phone"></i>
+                        <i class="uil uil-envelope"></i>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="title">Jean Dupont</div>
+                    <div class="poste">Vice Président</div>
+                    <div class="contact-me">
+                        <i class="uil uil-phone"></i>
+                        <i class="uil uil-envelope"></i>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="title">Boris Blanc</div>
+                    <div class="poste">Commercial</div>
+                    <div class="contact-me">
+                        <i class="uil uil-phone"></i>
+                        <i class="uil uil-envelope"></i>
+                    </div>
+                </div>                
+            </div>
+            <div class="adress-data" id="contact">
+                <div class="contact">
+                    <div class="icons"><i class="uil uil-location-point"></i></div>
+                    <div class="adresse-text">
+                        <p>Rue 144 1362, Ngodi-Akwa</p>
+                        <p>Douala</p>                    
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="icons"><i class="uil uil-phone"></i></div>
+                    <p class="adresse-text">+237 697 975 442</p>
+                </div>
+                <div class="contact">
+                    <div class="icons"><i class="uil uil-envelope"></i></div>
+                    <p class="adresse-text">BP.: 4462 Doula - Cameroun</p>
+                </div>
+                <div class="icons contact-icons">
+                    <a href="mailto:cameroun@groupeserena.com">
+                        <i class="uil uil-at"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" id="facebook">
+                        <i class="uil uil-facebook-f"></i>
+                    </a>
+                    <a href="https://wa.me/237697975442" target="_blank" id="whatsapp">
+                        <i class="uil uil-whatsapp whatsapp-icon"></i>
+                    </a>
+                </div>
+            </div>
+            <button> <a href="./contact-form.html" target="_blank" rel="noopener noreferrer">Contactez-Nous</a></button>
         </div>
-        <div class="section swiper-container" id="galerie">
+        <!-- <div class="section swiper-container" id="">
             <div class="img-container swiper-wrapper">
                 <div class="img-block swiper-slide">
                         <img src="./images/pic_ngodi-akwa-2.jpg" alt="">
@@ -81,75 +179,62 @@
             <div class="swiper-pagination"></div>
             <div class="swiper-scrollbar"></div>
 
-        </div>
-        <div class="section" id="contact">
-            <h3 class="form-title">Communiquez nous votre besoin</h3>
-            <p>Nous revenons vers vous le plus tôt possible.</p>
-            <form action="">
-                <label for="name">Nom <br/>
-                    <input type="text" id="name">
-                </label>
-                <label for="telephone">Telephone <br/>
-                    <input type="tel" id="telephone">
-                </label>
-                <label for="email">E-Mail <br/>
-                    <input type="email" id="email">
-                </label>
-                <label for="mountdate">Date de montage des chapiteaux <br/>
-                    <input type="date" id="mountdate">
-                </label>
-                </label>
-                <label for="unmountdate">Date de demontage des chapiteaux <br/>
-                    <input type="date" id="unmountdate">
-                </label>                
-                <label for="lieu">Lieu de l'évènement <br/>
-                    <input type="text" id="lieu">
-                </label>
-                <label for="description">Description de l'évènement <br/>
-                    <textarea name="" id="description" cols="50" rows="10"></textarea>
-                </label>
-                <button type="submit">Envoyez</button>
-            </form>
-        </div>
-    </main>
+        </div> -->
+        
+        <div class="section" id="prestations">      
+            <div>
+                <h2>Tentes et chapiteaux</h2>
+                <ul class="primary">
+                    <a href="#prestations">
+                        <li class="secondary">Évènements</li>
+                    </a>
+                    <a href="#prestations">
+                        <li class="secondary">Corporatif</li>
+                    </a>
+                    <a href="#prestations">
+                        <li class="secondary">Mariage</li>
+                    </a>
+                </ul>
+            </div>
+            <div>
+                <h2>Location de produits</h2>
+                <ul class="primary primary-grid">
+                    <li class="secondary">Tables et chaises
+                        <ul>
+                            <a href="#prestations"><li>Tables</li></a>
+                            <a href="#prestations"><li>Chaises et tabourets</li></a>
+                            <a href="#prestations"><li>Housse couvre chaise</li></a>
+                            <a href="#prestations"><li>Jupes</li></a>
+                            <a href="#prestations"><li>Nappes</li></a>
+                            <a href="#prestations"><li>Pointes</li></a>
+                        </ul>
+                    </li>
+                    <li class="secondary">Vaisselles et couverts
+                        <ul>
+                            <a href="#prestations"><li>Vaisselles</li></a>
+                            <a href="#prestations"><li>Coutellerie</li></a>
+                            <a href="#prestations"><li>Verres et coupes</li></a>
+                            <a href="#prestations"><li>Serviettes de table</li></a>
+                        </ul>
+                    </li>
+                    <li class="secondary">Accessoires
+                        <ul>
+                            <a href="#prestations"><li>Équipements et accessoires</li></a>
+                            <a href="#prestations"><li>Bars portatifs et accessoires</li></a>
+                            <a href="#prestations"><li>Toilette portative Sanibert</li></a>
+                            <a href="#prestations"><li>BBQ et cuisson extérieure</li></a>
+                            <a href="#prestations"><li>Réchaud</li></a>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>       
+    </main>    
     <footer>
-        <div class="adress-data">
-            <div class="contact">
-                <div class="icons"><i class="uil uil-location-point"></i></div>
-                <div class="adresse-text">
-                    <p>Rue 144 1362, Ngodi-Akwa</p>
-                    <p>Douala</p>                    
-                </div>
-            </div>
-            <div class="contact">
-                <div class="icons"><i class="uil uil-phone"></i></div>
-                <div class="adresse-text">+237 697 975 442</div>
-            </div>
-            <div class="contact">
-                <div class="icons"><i class="uil uil-envelope"></i></div>
-                <div class="adresse-text">BP.: 4462 Doula - Cameroun</div>
-            </div>
-            <div class="icons contact-icons">
-                <a href="mailto:cameroun@groupeserena.com">
-                    <i class="uil uil-at"></i>
-                </a>
-                <a href="https://www.facebook.com" target="_blank" id="facebook">
-                    <i class="uil uil-facebook-f"></i>
-                </a>
-                <a href="https://wa.me/237697975442" target="_blank" id="whatsapp">
-                    <i class="uil uil-whatsapp whatsapp-icon"></i>
-                </a>
-            </div>
-        </div>
         <div class="copyright">
-            <p>&copy; Thus Academy - 2021</p>
+            <p>Serena Group &copy; Thus Academy - 2021</p>
         </div>
     </footer>
-    <!-- =========================  Main  =========================== -->
-    <!-- =========================  Footer  =========================== -->
-    <!-- =========================  Scroll Top  =========================== -->
-    <!-- =========================  Swiper JS  =========================== -->
-    <!-- =========================  Header  =========================== -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
